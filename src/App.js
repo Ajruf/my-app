@@ -31,6 +31,7 @@ function App() {
           Learn React with Andrew and MSU
         </a>
         <Mbutton />
+        <Library />
       </header>
     </div>
   );
@@ -49,20 +50,19 @@ function Library() {
     setMyBooks(Books);
   }
   // Execute the function
-  getBooks();
   // Below is what displays when you use <Library />
   return (
-    <table>
-    {
-      myBooks.map(b => (
+    <><button onClick={getBooks}>Get Data</button>
+    <table class="Bookshelf">
+      {myBooks.map(b => (
         <tr>
-          <td>{b.title}</td>
-          <td>{b.author}</td>
-          <td>{b.isbn}</td>
+          <td id='bold'>{b.Title}</td>
+          <td>{b.Author}</td>
+          <td>{b.ISBN}</td>
         </tr>
-      ))
-    }
-    </table>
+      ))}
+    </table></>
+
   )
 }
 

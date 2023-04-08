@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.Bookshelf {
+  border: 5px solid rgb(65, 208, 255);
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: black;
+  font-size: 0.75em;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td {
+  padding: 25px;
+  text-align: left;
+}
+
+#bold {
+  font-weight: bold;
+}
